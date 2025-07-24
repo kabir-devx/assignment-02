@@ -264,9 +264,10 @@
 /* subscribe section */
 
 .subscribe-section{
-  max-width: 1140px;
+  max-width: 1440px;
   height: 533px;
   margin: 120px auto;
+  margin-bottom: 0;
   background-image: url(../assets/news-letter-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -283,7 +284,7 @@
 
 .input-box input{
   height: 50px;
-  max-width: 624px;
+  width: 624px;
   padding-left: 20px ;
   border: none;
   outline: none
@@ -293,7 +294,74 @@
   background-color: #e95a08;
   color: white;
   font-weight: 600;
-  max-width: 186px;
+  width: 186px;
   height: 100%;
   border: none;
+}
+@media screen and (max-width:576px) {
+  .input-box input{
+    width: 218px;
+  }
+  .input-box button{
+    width: 103px;
+  }
+}
+/* footer style */
+.footer {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 40px;
+  padding: 40px 20px;
+  align-items: start;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.footer-links ul {
+  list-style: none;
+  display: grid;
+  row-gap: 20px;
+}
+.footer-links ul li a {
+  text-decoration: none;
+  color: #6B7280; 
+}
+.footer-heading p{
+  color: rgba(0, 0, 0, 0.5);
+}
+.social-midea {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 24px;
+}
+.social-midea img{
+  height: 36px;
+  width: 36px;
+}
+/* footer reponsive */
+@media screen and (max-width:576px) {
+  .footer{
+    grid-template-columns: 1fr;
+    text-align:left;
+    gap: 0;
+  }
+  .footer-links{
+    grid-template-columns: 1fr;
+    justify-content: flex-start;
+    gap: 0;
+  }
+  .footer-links ul{
+    padding: 0;
+  }
+  .social-midea{
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+
 }
