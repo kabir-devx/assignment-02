@@ -137,6 +137,8 @@
 .section-des{
   font-size: 22px;
   color: rgba(0, 0, 0, 0.5);
+  display: grid;
+  gap: 20px;
 }
 .card-container{
   display: grid;
@@ -163,5 +165,22 @@
   .card-container{
     grid-template-columns: repeat(2,1fr);
   }
-  
 }
+/* trusted  seller section */
+.trusted-seller{
+  display:flex;
+  max-width: 1140px;
+  margin: 100px auto;
+}
+.text-container{
+  padding-left: 60px;
+}
+/* trusted seller responsive */
+
+@media screen and (max-width:576px) {
+  .trusted-seller{
+    flex-direction: column;
+  }
+}
+
+
