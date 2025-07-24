@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Faugei Flower Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Serif:wght@100..900&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
-    
+
+<body class="inter">
+    <header class="header-container">
+        <div class="logo">
+            <img src="assets/logo.png" alt="Faugei Flower">
+        </div>
+        <nav class="nav-container flex">
+            <ul class="flex nav-links">
+                <li><a id="home" class="text-black" href="#">Home</a></li>
+                <li><a class="light-indigo" href="#">Shop</a></li>
+                <li><a class="light-indigo" href="#">About us</a></li>
+            </ul>
+            <div class="flex cart" href=""><img class="cart-icon" src="assets/cart-shopping-regular-full.svg" alt=""></img>Cart($56)</div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-section flex">
+            <div class="hero-text-area">
+                <h1 class="hero-title noto">ALWAYS <span class="text-orange">FRESH<br>FLOWERS</span></h1>
+                <p class="hero-des">Indulge your senses with the beauty and fragrance of <br> our fresh flower shop. From classic roses to exotic <br> blooms, we offer a wide variety of fresh flowers that <br> are perfect for any occasion. </p>
+            </div>
+            <img class="hero-img" src="assets/hero-flower.png" alt="hero flower">
+        </section>
+        
+
+
+    </main>
 </body>
+
 </html>
