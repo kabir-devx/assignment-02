@@ -26,6 +26,9 @@
   font-size: 50px;
   font-weight: bold;
 }
+.white{
+  color: white;
+}
 /* header */
 .header-container{
     display: flex;
@@ -78,6 +81,7 @@
 .hero-section{
   max-width: 1140px;
   margin: 90px auto;
+  justify-content: space-between;
 }
 .hero-text-area{
   display: flex;
@@ -143,7 +147,10 @@
 .card-container{
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  gap: 30px ;
+  gap: 30px;
+}
+.card-body img{
+  width: 100%;
 }
 .card-title{
   font-size: 22px;
@@ -175,12 +182,118 @@
 .text-container{
   padding-left: 60px;
 }
+.trusted-img img{
+  width: 100%;
+}
 /* trusted seller responsive */
 
 @media screen and (max-width:576px) {
   .trusted-seller{
     flex-direction: column;
   }
+  .text-container{
+    padding: 0;
+  }
 }
 
+/* latest deal section */
+.latest-deal{
+  max-width: 1140px;
+  margin: 0 auto;
+  text-align: center;
+}
+.deals {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+.deals-left {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+.bloom, .ana, .zabo {
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 8px;
+}
+.big{
+  color: white;
+  font-size: 28px;
+}
+.small{
+  font-size: 14px;
+  color: white;
+}
+.bloom{
+  background-image: url('../assets/deal-bloom.png');
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.ana{
+  background-image: url(../assets/deal-ana.png);
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.zabo{
+  background-image: url(../assets/deal-zabo.png);
+  background-repeat: no-repeat;
+  height: 423px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+/* responsive latest deal section */
+@media (max-width: 576px) {
+  .deals {
+    grid-template-columns: 1fr;
+  }
+  .zabo , .ana, .bloom {
+    grid-row: auto;
+    height: 200px;
+  }
+  .big{
+    font-size: 14px;
+    color: white;
+  }
+}
 
+/* subscribe section */
+
+.subscribe-section{
+  max-width: 1140px;
+  height: 533px;
+  margin: 120px auto;
+  background-image: url(../assets/news-letter-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.input-box{
+  display: flex;
+  max-width: 830px;
+}
+
+.input-box input{
+  height: 50px;
+  max-width: 624px;
+  padding-left: 20px ;
+  border: none;
+  outline: none
+ 
+}
+.input-box button{
+  background-color: #e95a08;
+  color: white;
+  font-weight: 600;
+  max-width: 186px;
+  height: 100%;
+  border: none;
+}
