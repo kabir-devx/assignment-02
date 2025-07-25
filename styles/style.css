@@ -222,9 +222,24 @@
   }
   .trusted-badge{
     display: none;
-    
+
   }
 }
+/* badge animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.trusted-badge {
+  animation: spin 5s linear infinite;
+}
+
+
 
 /* latest deal section */
 .latest-deal{
