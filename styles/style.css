@@ -236,7 +236,8 @@
 }
 
 .trusted-badge {
-  animation: spin 5s linear infinite;
+  animation: spin 6s linear infinite;
+  filter: drop-shadow(0 8px 10px rgba(0, 0, 0, 0.3));
 }
 
 
